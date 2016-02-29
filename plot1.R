@@ -36,7 +36,7 @@ plot1.data <- function() {
   
   # Create a histogram in a PNG file
   png(file="plot1.png", width=480, height=480)
-  hist(as.numeric(ts_data$Global_active_power), main = "Global Active Power", col = "red", xlab = "Global Active Power (kilowatts)")
+  hist(as.numeric(graphData.set$Global_active_power), main = "Global Active Power", col = "red", xlab = "Global Active Power (kilowatts)")
   dev.off()
   
 }
